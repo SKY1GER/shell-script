@@ -1,8 +1,8 @@
 #!/bin/bash
 user_id=$(id -u)
-script_name=$($0 | cut -d "." -f1)
+script_name=$(echo $0 | cut -d "." -f1)
 time_stamp=$(date +%F-%H-%M-%S)
-logfile=/tmp/$script_name-time_stamp.log
+logfile=/tmp/$script_name-$time_stamp.log
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
