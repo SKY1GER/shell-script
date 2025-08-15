@@ -2,8 +2,8 @@
 set -e
 
 echo "=== Updating packages ==="
-sudo yum update -y
-sudo yum install -y git curl tar gzip
+#sudo yum update -y
+#sudo yum install -y git curl tar gzip
 
 # --------------------------------------------------------
 # Install kubectl
